@@ -1,7 +1,6 @@
 package phone.book.phonebook.entities;
 
 import java.io.Serializable;
-import java.time.LocalDate;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -20,7 +19,7 @@ public class Contact implements Serializable {
     private String telephone;
     private String email;
     private String address;
-    private LocalDate birthDate;
+    private String birthDate;
     private String category;
     private boolean favorite;
     private String notes;
@@ -56,10 +55,10 @@ public class Contact implements Serializable {
     public void setAddress(String address) {
         this.address = address;
     }
-    public LocalDate getBirthDate() {
+    public String getBirthDate() {
         return birthDate;
     }
-    public void setBirthDate(LocalDate birthDate) {
+    public void setBirthDate(String birthDate) {
         this.birthDate = birthDate;
     }
     public String getCategory() {
